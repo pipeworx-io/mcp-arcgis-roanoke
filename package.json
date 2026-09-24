@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-arcgis-roanoke",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "City of Roanoke GIS — Roanoke, Virginia open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-arcgis-roanoke": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-roanoke"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-arcgis-roanoke"
+    "url": "git+https://github.com/pipeworx-io/mcp-arcgis-roanoke.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-fd825d341783f2e8f2a2d1d5aa49f6a6b346b33a84512c0dfd5157408f9cd549",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
